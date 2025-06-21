@@ -1,0 +1,72 @@
+/* historyページのスタイルをベースに、お気に入りページ用のスタイルを作成 */
+/* 主要なクラス名はhistory.module.cssから流用し、必要に応じて調整 */
+
+.wrapper {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 18px;
+  color: #1a1a2e;
+  background: #fff;
+  border-bottom: 1px solid #f0f0f0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 60px;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  color: #1a1a2e;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.headerTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 1rem;
+  padding-top: 70px; /* header height */
+  padding-bottom: 80px; /* nav height */
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.noItemsText {
+  text-align: center;
+  color: #6b7280;
+  margin-top: 2rem;
+}
+
+.favoritesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* お気に入りカード（historyCardと同じスタイルを仮適用） */
+.favoriteCard {
+  background: #fff;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  overflow: hidden;
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+} 

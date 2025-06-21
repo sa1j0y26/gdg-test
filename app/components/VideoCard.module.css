@@ -1,0 +1,112 @@
+.card {
+  background-color: #efe5f3;
+  border-radius: 12px;
+  border: none;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #e5ddeb;
+}
+
+.cardHeaderText {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.langTag {
+  background-color: #eef2f7;
+  color: #334155;
+  padding: 0.2rem 0.5rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ccc;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.starBtn:hover {
+  background-color: #f9f9f9;
+}
+
+.starBtn.favorite {
+  color: #ffd700;
+}
+
+
+.videoContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #efe5f3;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoPlayer {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+}
+
+.videoPlaceholder {
+  color: #5f6368;
+  text-align: center;
+}
+
+
+.cardFooter {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  gap: 1rem;
+}
+
+.footerBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #5f6368;
+  transition: color 0.2s;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.footerBtn:hover:not(:disabled) {
+  color: #000;
+}
+
+.footerBtn:disabled {
+  color: #bdc1c6;
+  cursor: not-allowed;
+}
+
+.footerBtn.favorite {
+  color: #ffc82c;
+} 

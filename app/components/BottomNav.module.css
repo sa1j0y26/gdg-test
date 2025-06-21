@@ -1,0 +1,43 @@
+.bottomNav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-around;
+  height: 62px;
+  z-index: 10;
+}
+.navBtn {
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60px; /* アイコンのクリック範囲を確保 */
+}
+.navIconActive {
+  background: #e5e7eb;
+  border-radius: 50%;
+  padding: 8px;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navIconCamera {
+  background: #15345a;
+  color: #fff;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 4px 12px rgba(21,52,90,0.2);
+  /* 少し上に持ち上げるスタイル */
+  transform: translateY(-15px);
+  border: 4px solid #fff;
+} 
