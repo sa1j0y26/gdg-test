@@ -25,9 +25,19 @@ export default function Translate() {
     setError("");
     setVideoUrl("");
     try {
-      const res = await fetch(`/api/sign/${encodeURIComponent(input)}`);
-      if (!res.ok) throw new Error("API error");
+      // const res = await fetch(`/api/sign/${encodeURIComponent(input)}`);
+      // translate between english and japanese
+      const res = await fetch("/api/translate", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ text: input }),
+      });
+  
       const data = await res.json();
+      if (!res.ok) throw new Error("API error");
+      
       if (data.movie_link) {
         setVideoUrl(data.movie_link);
 
@@ -123,3 +133,4 @@ export default function Translate() {
     </div>
   );
 } 
+
